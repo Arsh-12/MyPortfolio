@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Set</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <link rel="stylesheet" href="skill.css">
+    <link rel="stylesheet" href="intro.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header class="container">
+        <div class="page-header">
+            <div class="logo">
+                <a href="#"><img src="/software-developer_4730390.png" alt="logo" width= "49px" height = "38px"s></a>
+            </div>
+            <input type="checkbox" id="click">
+
+            <label for="click" class="mainicon">
+                <div class="menu">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </label>
+            <ul>
+                <li><a href="/intro.html"  style="--navAni:1">Home</a></li>
+                <li><a href="#"  class="active" style="--navAni:3">Skills</a></li>
+                <li><a href="#" style="--navAni:4">Projects</a></li>
+                <li><a href="contact.html" style="--navAni:5">Contact</a></li>
+            </ul>
+            <label class="mode">
+                <input type="checkbox" id="darkbtn">
+                <i class='bx bxs-moon'></i>
+            </label>
+        </div>
+    </header>
+    <section class="container1">
+        <div class="SkillsHead1">
+            <h1>My Skills</h1>
+        </div>
+           
+                <div class="skill02">
+                    
+                    <div class="programing">
+                        <div>
+                            <img src="pngwing.com (1).png" alt="programing" width="70px" height="70px">
+                        </div>
+                        <div>
+                            <h3 id="one">Programing</h3>
+                        </div>
+                        
+                    </div>
+                    <div class="problemsolving">
+                        <div>
+                            <img src="/problem-solving.png" alt="programing" width="70px" height="70px">
+                        </div>
+                        <div>
+                            <h3 id="two">Problemsolving</h3>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="skill02">
+                    
+                    <div class="java">
+
+                        <div>
+                            <img src="java.512x512.png" alt="programing" width="70px" height="70px">
+                        </div>
+                        <div>
+                            <h3 id="three">Java</h3>
+                        </div>
+                        
+                    </div>
+                    <div class="deluge" style="margin-bottom: 20px;">
+
+                        <div id="delugeImage">
+                            <img src="deluge-logo.png" alt="programing" width="100px" height="50px">
+                        </div>
+                        <div>
+                            <h3 id="one">Deluge Script</h3>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="SkillsHead2">
+                    <h1>Web-Developement</h1>
+
+                </div>
+                    <div class="skill03">
+                        <div class="html">
+                            <div>
+                                <img src="html.png" alt="programing" width="70px" height="70px">
+                            </div>
+                            <div>
+                                <h3 id="A">HTML</h3>
+                            </div>
+                        </div>
+                        <div class="css">
+                            <div>
+                                <img src="css.png" alt="programing" width="70px" height="70px">
+                            </div>
+                            <div>
+                                <h3 id="B">CSS</h3>
+                            </div>
+                        </div>
+                        <div class="js">
+                            <div>
+                                <img src="js.png" alt="programing" width="70px" height="70px">
+                            </div>
+                            <div>
+                                <h3 id="C">Java Script</h3>
+                            </div>
+                        </div>
+
+                    </div>
+
+    </section>
+    
+    <script>
+        const darkbtn = document.getElementById('darkbtn');
+const body = document.body;
+const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+if (isDarkMode) {
+    body.classList.add('dark-mode');
+    darkbtn.checked = true;
+}
+
+darkbtn.addEventListener('change', () => {
+    if (darkbtn.checked) {
+        body.classList.add('dark-mode');
+        localStorage.setItem('darkMode', 'enabled');
+    } else {
+        body.classList.remove('dark-mode');
+        localStorage.setItem('darkMode', 'disabled');
+    }
+});
+</script>
+</body>
+
+
+</html>
