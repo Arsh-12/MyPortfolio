@@ -243,6 +243,35 @@ left: 10px;
 }
 
 @media screen and (max-width:600px) {
+    .SkillsHead1 {
+        position: relative;
+        left: 32%;
+        margin: 20px;
+    }
+    .skill02 {
+        margin: 15px 30px 30px 30px;
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        left: 0%;
+        width: 93%;
+    }
+    .SkillsHead2 {
+        position: relative;
+        left: 13%;
+        margin: -20px 20px 20px 20px;
+    }
+
+    .skill03 {
+        display: flex;
+        width: 90%;
+        position: relative;
+        left: 5%;
+        justify-content: space-around;
+    }
+
+
+
     html {
         font-size: 100%;
     }
